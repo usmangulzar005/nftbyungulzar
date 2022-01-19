@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+<link rel="stylesheet" href="CSS/style.CSS">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+
+    <div class="image">
+      <img id="img1" onmouseover="hoVer()" onmouseleave="Leave()" src="images/image-equilibrium.jpg">
+<div id="img2" class="im">
+  <img id="img" src="images/icon-view.svg" alt="">
+</div>
+
+    </div>
+
+      <div class="cont">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="time">
+          <div class="tim-1">
+            <img src="images/icon-ethereum.svg" alt="">
+            <span>0.041 ETH</span>
+          </div>
+          <div class="tim-2">
+            <img src="images/icon-clock.svg" alt="">
+           <span>3 days left</span>
+          </div>
+
+        </div>
+        <hr>
+        <div class="foot">
+          <img src="images/image-avatar.png" alt="">
+          <h3>Creation of <span>Jules Wyvern</span></h3>
+        </div>
+    </div>
+  </div>
+<script>
+  function hoVer()
+  {
+    document.getElementById("img").style.display = "inline-block";
+    document.getElementById("img2").style.display = "inline-block";
+
+  }
+  function Leave()
+  {
+    document.getElementById("img2").style.display = "none";
+    document.getElementById("img").style.display = "none";
+  }
+</script>
+</body>
+</html>
